@@ -1,0 +1,141 @@
+/* ----------------------font--------------------------- */
+@font-face {
+  font-family: "Playfair Display", serif;
+  src: url("../fonts/testFont/PlayfairDisplay-Black.woff");
+}
+/* ------------------DEFAULT Css----------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Playfair Display", serif;
+}
+:root {
+  --primary-color: #fee2b3;
+  --color-dark: #f5d194;
+}
+header {
+  font-size: 20px;
+  background-color: var(--primary-color);
+  padding: 20px 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+ol {
+  list-style: none;
+}
+dl {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1140px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
+.button {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid white;
+}
+.button:hover {
+  background-color: var(--color-dark);
+}
+/* -----------------------display css------------------------- */
+.display {
+  display: flex;
+  flex-wrap: wrap;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+/* -----------------------grid css------------------------- */
+.grid-cols {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+}
+.col-span {
+  grid-column: span 2/ span 3;
+}
+/* -------------------------Header css-------------------------- */
+.menu a {
+  margin: 0 10px;
+  transition: 0.5s;
+}
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+}
+.menu a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* -------------------------Bannner images----------------------------- */
+.hero-bgImages {
+  background-image: url("../images/hero_bg_1.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  min-height: 820px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-banner {
+  
+  aspect-ratio: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-bannerContent1 {
+  align-self: flex-start;
+  padding: 60px;
+  color: white;
+}
+.hero-bannerContent1 h2 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.hero-bannerContent1 p {
+  line-height: 20px;
+  font-weight: 100px;
+}
+.hero-bannerContent2 {
+  background-color: white;
+  border-radius: 7px;
+  place-self: end;
+  padding: 40px;
+}
+.hero-bannerContent2 h3 {
+  font-size: 20px;
+  color: #364d59;
+  margin-bottom: 10px;
+}
+.hero-bannerContent2 input {
+  padding: 20px 20px;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 8px;
+}
+.hero-bannerContent2 input:focus {
+  outline: none;
+}
