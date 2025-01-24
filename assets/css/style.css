@@ -28,7 +28,7 @@ a {
   color: black;
 }
 ul {
-  list-style: none; 
+  list-style: none;
 }
 ol {
   list-style: none;
@@ -159,6 +159,8 @@ li {
   transition: 1s;
 }
 .hero-cart img:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
   opacity: 0.9;
 }
 .hero-cart h3 {
@@ -203,10 +205,30 @@ li {
   width: 20px;
 }
 /* ---------------Table css----------------- */
-.hero-table{
- width: 100%;
+.hero-tablelist {
+  margin: 30px 0;
 }
-.hero-table table tr td img {
+.hero-table {
+  width: 100%;
+  padding: 40px;
+  margin: 10px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+.hero-tablelist h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.hero-table tr td img {
   width: 200px;
-  height: 200px;
-} 
+}
+.hero-table tr {
+  padding: 10px;
+}
+.hero-table thead tr th {
+  text-align: left;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+.hero-table tbody tr td {
+  border-bottom: 1px solid rgb(205, 203, 203);
+}
