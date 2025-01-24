@@ -5,12 +5,15 @@
     .hero-banner-bgimg2{
         display: none;
     }
+     
+    .hero-banner-bgimg1{
+        width: 100%;
+    }
   
 }
 @media (max-width: 991px) {
-    .display {
-        flex: wrap;
-    }
+   
+
 }
 @media (max-width: 767px) { }
 @media (max-width: 576px) {}

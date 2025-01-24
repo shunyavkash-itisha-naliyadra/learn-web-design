@@ -18,3 +18,8 @@
         width: 1140px;
     }
 }
+@media (min-width:1400px){
+    .container{
+        width: 1320px;
+    }
+}
