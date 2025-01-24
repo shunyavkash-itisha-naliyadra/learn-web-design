@@ -18,15 +18,17 @@ body {
 }
 header {
   font-size: 20px;
-  background-color: var(--primary-color);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
   padding: 20px 0;
+  z-index: 2;
 }
 a {
   text-decoration: none;
   color: black;
 }
 ul {
-  list-style: none;
+  list-style: none; 
 }
 ol {
   list-style: none;
@@ -47,7 +49,8 @@ li {
   background-color: var(--primary-color);
   cursor: pointer;
   transition: 0.5s;
-  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 20px;
 }
 .button:hover {
   background-color: var(--color-dark);
@@ -55,10 +58,12 @@ li {
 /* -----------------------display css------------------------- */
 .display {
   display: flex;
-  flex-wrap: wrap;
 }
 .justify-content-between {
   justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
 }
 .align-items-center {
   align-items: center;
@@ -68,9 +73,10 @@ li {
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .col-span {
-  grid-column: span 2/ span 3;
+  grid-column: span 2 / span 3;
 }
 /* -------------------------Header css-------------------------- */
 .menu a {
@@ -85,50 +91,51 @@ li {
   color: rgba(0, 0, 0, 0.5);
 }
 /* -------------------------Bannner images----------------------------- */
+.hero-banner {
+  height: 400px;
+  aspect-ratio: auto;
+}
 .hero-bgImages {
-  background-image: url("../images/hero_bg_1.jpg.webp");
+  background-image: url("../images/27343111-image-en-noir-sur-un-fond-blanc-dessin-de-légumes-de-fruits-et-de-baies-.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
-  background-blend-mode: overlay;
-  min-height: 820px;
+  /* background-blend-mode: overlay; */
+  padding: 10%;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
-.hero-banner {
-  
-  aspect-ratio: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.hero-banner-bgimg1 {
+  background-image: url("../images/juice.png");
+  background-size: cover;
+  width: 100%;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.hero-bannerContent1 {
+.hero-banner-bgimg2 {
+  background-image: url("../images/juice2.png");
+  background-size: cover;
+  width: 100%;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-bannerContent {
   align-self: flex-start;
   padding: 60px;
-  color: white;
+  color: rgb(78, 100, 160);
+  position: relative;
 }
-.hero-bannerContent1 h2 {
+.hero-bannerContent h2 {
   font-size: 40px;
-  padding-bottom: 20px;
 }
-.hero-bannerContent1 p {
+.hero-bannerContent p {
   line-height: 20px;
+  margin: 20px 0;
   font-weight: 100px;
 }
-.hero-bannerContent2 {
-  background-color: white;
-  border-radius: 7px;
-  place-self: end;
-  padding: 40px;
-}
-.hero-bannerContent2 h3 {
-  font-size: 20px;
-  color: #364d59;
-  margin-bottom: 10px;
-}
-.hero-bannerContent2 input {
+/* .hero-bannerContent2 input {
   padding: 20px 20px;
   width: 100%;
   margin: 10px 0;
@@ -138,4 +145,60 @@ li {
 }
 .hero-bannerContent2 input:focus {
   outline: none;
+} */
+/*---------------------hero cart css-------------------------*/
+.hero-cart {
+  margin: 30px 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+.hero-cart img {
+  width: 100%;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+.hero-cart img:hover {
+  opacity: 0.9;
+}
+.hero-cart h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.hero-cart svg {
+  width: 20px;
+}
+.hero-cart p {
+  color: black;
+  margin-bottom: 10pxpx;
+}
+.hero-cart-content {
+  margin: 20px 0;
+  line-height: 20px;
+}
+.hero-cart-button {
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: #454748;
+  color: white;
+  transition: 1s;
+}
+.hero-cart-button:hover {
+  background-color: #808181;
+}
+.hero-cart-icon {
+  margin-bottom: 40px;
+}
+.hero-cart-icon a {
+  padding: 10px;
+  background-color: rgba(228, 224, 224, 0.5);
+  border-radius: 50%;
+  transition: 1s;
+}
+.hero-cart-icon a:hover {
+  transform: scale(1.1);
+  background-color: rgba(245, 235, 235, 0.5);
+}
+.hero-cart-icon a svg {
+  width: 20px;
 }
