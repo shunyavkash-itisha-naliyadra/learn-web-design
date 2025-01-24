@@ -96,7 +96,7 @@ li {
   aspect-ratio: auto;
 }
 .hero-bgImages {
-  background-image: url("../images/27343111-image-en-noir-sur-un-fond-blanc-dessin-de-légumes-de-fruits-et-de-baies-.jpg");
+  background-image: url("../images/bannerbgimg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -202,3 +202,11 @@ li {
 .hero-cart-icon a svg {
   width: 20px;
 }
+/* ---------------Table css----------------- */
+.hero-table{
+ width: 100%;
+}
+.hero-table table tr td img {
+  width: 200px;
+  height: 200px;
+} 
