@@ -1,21 +1,25 @@
 @media (min-width:567px){
     .container{
-        width: 540px;
+        width: 100%;
+        padding:0 15px;
     }
 }
 @media (min-width:768px){
     .container{
-        width: 720px;
+        width: 100%;
+        padding:0 15px;
     }
 }
 @media (min-width:992px){
     .container{
-        width: 920px;
+        width: 100%;
+        padding:0 15px;
     }
 }
 @media (min-width:1200px){
     .container{
-        width: 1140px;
+        width: 100%;
+        padding:0 15px;
     }
 }
 @media (min-width:1400px){
