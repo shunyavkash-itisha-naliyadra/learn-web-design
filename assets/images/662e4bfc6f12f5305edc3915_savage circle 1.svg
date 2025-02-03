@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.4 441.4">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #332f2f;
+        mix-blend-mode: overlay;
+        opacity: .75;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Chapter_I_production" data-name="Chapter I production">
+        <path class="cls-2" d="M220.7,0C98.81,0,0,98.81,0,220.7s98.81,220.7,220.7,220.7,220.7-98.81,220.7-220.7S342.59,0,220.7,0ZM220.7,335.63c-62.7,0-113.53-51.46-113.53-114.93s50.83-114.93,113.53-114.93,113.53,51.46,113.53,114.93-50.83,114.93-113.53,114.93Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

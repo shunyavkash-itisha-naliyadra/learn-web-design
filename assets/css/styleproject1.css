@@ -1,0 +1,125 @@
+/* ----------------------font--------------------------- */
+
+/* ------------------DEFAULT Css----------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+:root {
+  --primary-color: #fee2b3;
+  --color-dark: #f5d194;
+}
+header {
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+ol {
+  list-style: none;
+}
+dl {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1140px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
+/* -----------------------display css------------------------- */
+
+/* -----------------------banner css---------------------- */
+.hero-banner-bgimg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: grayscale(80%);
+}
+.hero-banner-content {
+  width: 50%;
+  padding: 8%;
+  position: absolute;
+  right: 111px;
+  bottom: 0%;
+  color: white;
+}
+.hero-banner-content h1 {
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 44px;
+  line-height: 50px;
+}
+.hero-banner-content p {
+  font-size: 25px;
+  font-weight: 200px;
+}
+.hero-banner-content p span {
+  font-size: 18px;
+}
+.hero-banner-content-images {
+  width: 500px;
+}
+.hero-banner-content1 {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero-banner-content1-img img {
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  top: 143px;
+  left: 198px;
+}
+.hero-banner-contents{
+    position: absolute;
+    top: 58%;
+    left: 6%;
+}
+.hero-banner-content1 h2 {
+  text-transform: uppercase;
+  position: absolute;
+  top: -44px;
+  left: 55px;
+  text-align: center;
+  font-size: 50px;
+  color: gray;
+  font-weight: 100;
+}
+.hero-banner-content1-img1 img {
+  position: absolute;
+  width: 320px;
+  left: 20px;
+  top: 96px;
+}
